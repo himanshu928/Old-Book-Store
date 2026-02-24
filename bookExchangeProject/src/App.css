@@ -1,3 +1,13 @@
 body{
     background-color: rgb(214, 207, 198);
 }
+
+
+.feature-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(241, 238, 238);
+}
