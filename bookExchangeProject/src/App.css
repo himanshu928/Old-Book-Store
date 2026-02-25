@@ -37,4 +37,5 @@ body{
     justify-content: center;
     padding: 20px;
     background-color: rgb(241, 238, 238);
+    border-bottom: 2px solid rgb(180, 178, 178);
 }   

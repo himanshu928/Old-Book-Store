@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import FeatureCard from "./components/FeatureCard";
 import "./styles/featureCard.css";
 import BooksCard from "./components/BooksCard";
+import BookFinder from "./components/BookFinder";
 
 function App() {
   const featureData = [
@@ -85,7 +86,9 @@ function App() {
               image={book.image}
             />
           ))}
+          
         </div>
+        <BookFinder /> 
     </>
     
   );
