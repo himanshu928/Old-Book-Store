@@ -11,3 +11,30 @@ body{
     padding: 20px;
     background-color: rgb(241, 238, 238);
 }
+
+.heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(241, 238, 238);
+
+    h1{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        color: rgb(243, 83, 20);
+        border-bottom: 2px solid rgb(180, 178, 178);
+        padding-bottom: 10px;
+    }
+}
+
+
+.books-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(241, 238, 238);
+}   

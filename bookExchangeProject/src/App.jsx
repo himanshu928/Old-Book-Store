@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import FeatureCard from "./components/FeatureCard";
 import "./styles/featureCard.css";
+import BooksCard from "./components/BooksCard";
 
 function App() {
   const featureData = [
@@ -28,6 +29,33 @@ function App() {
       image: "src/assets/feature-img3.png",
     },
   ];
+
+  const BooksData = [
+    {
+      id: 1,
+      title: "Chemistry for Class 12th",
+      description: "₹150 Starting",
+      image: "src/assets/Book1.jpg",
+    },
+    {
+      id: 2,
+      title: "Artificial Intelligence for Class 10th",
+      description: "₹200 Starting",
+      image: "src/assets/Book2.jpg",
+    },
+    {
+      id: 3,
+      title: "Mathematics for Class 10th",
+      description: "₹180 Starting",
+      image: "src/assets/Book3.jpg",
+    },
+    {
+      id: 4,
+      title: "Last Minutes Hacks for Class 12th",
+      description: "₹120 Starting",
+      image: "src/assets/Book5.jpg",
+    }
+  ];    
   const [count, setCount] = useState(0);
 
   return (
@@ -43,11 +71,23 @@ function App() {
             image={feature.image}
           />
         ))}
-        <div className="heading-container">
+       
+      </div>
+       <div className="heading-container">
           <h1>Popular Used Books</h1>
         </div>
-      </div>
+        <div className="books-card-container">
+          {BooksData.map((book) => (
+            <BooksCard
+              key={book.id}
+              title={book.title}
+              description={book.description}
+              image={book.image}
+            />
+          ))}
+        </div>
     </>
+    
   );
 }
 
