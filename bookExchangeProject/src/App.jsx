@@ -8,6 +8,7 @@ import FeatureCard from "./components/FeatureCard";
 import "./styles/featureCard.css";
 import BooksCard from "./components/BooksCard";
 import BookFinder from "./components/BookFinder";
+import Footer from "./components/Footer";
 
 function App() {
   const featureData = [
@@ -89,6 +90,7 @@ function App() {
           
         </div>
         <BookFinder /> 
+        <Footer />
     </>
     
   );
